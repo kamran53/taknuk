@@ -1,0 +1,23 @@
+p#notice = notice
+
+.container
+  .row
+    .col-sm-2
+    .col-sm-8
+      h2
+        = @blog.title
+      span.font-italic.text-secondary
+        ' Written on: 
+        = @blog.created_at.strftime("%B %d %Y")
+      br
+      - @blog.tag_list.each do |t|
+        span.badge.badge-dark
+          = t
+      hr
+      p
+        = @blog.body
+
+      => link_to 'Edit', edit_blog_path(@blog)
+      '|
+      =< link_to 'Back', blogs_path
+

@@ -1,0 +1,40 @@
+nav.navbar.navbar-light.navbar-expand-md.bg-light.justify-content-md-center.justify-content-start
+  / a.navbar-brand.d-md-none.d-inline href=""  Taknuk
+  = link_to "Taknuk", blogs_path, class: "navbar-brand d-md-none d-inline"
+  button.navbar-toggler.ml-1 data-target="#collapsingNavbar2" data-toggle="collapse" type="button" 
+    span.navbar-toggler-icon
+  a.nav-link href="#_"
+    i.fa.fa-search.mr-1
+  #collapsingNavbar2.navbar-collapse.collapse.justify-content-between.align-items-center.w-100
+    ul.navbar-nav.mx-auto.text-md-center.text-left
+      li.nav-item
+        = link_to "About", about_path, class: "nav-link"
+        / a.nav-link href="#"  About
+      li.nav-item
+        = link_to "Newsletter", newsletter_path, class: "nav-link"
+        / a.nav-link href="#"  Newsletter
+      li.nav-item.my-auto
+        = link_to "Taknuk", blogs_path, class: "nav-link navbar-brand.mx-0 d-none d-md-inline"
+        / a.nav-link.navbar-brand.mx-0.d-none.d-md-inline href=""  Taknuk
+      li.nav-item
+        = link_to "Tech writings", tech_blogs_path, class: "nav-link"
+        / a.nav-link href="#"  Tech writings
+      li.nav-item
+        = link_to "News Blogs", social_blogs_path, class: "nav-link"
+        / a.nav-link href="#"  News Blogs
+    ul.nav.navbar-nav.flex-row.justify-content-md-center.justify-content-start.flex-nowrap
+      li.nav-item
+        = link_to "#", class: "nav-link" do 
+          i.fab.fa-facebook.mr-1
+        / a.nav-link href="" 
+          i.fab.fa-facebook.mr-1
+      li.nav-item
+        = link_to "#", class: "nav-link" do
+          i.fab.fa-twitter
+        / a.nav-link href="" 
+          i.fab.fa-twitter
+      li.nav-item
+        = link_to "#", class: "nav-link" do 
+          i.fab.fa-linkedin-in
+        / a.nav-link href=""  
+          i.fab.fa-linkedin-in

@@ -1,0 +1,16 @@
+.container
+  - @blogs.each do |blog|
+    .card
+      / .card-header
+        | Featured
+      .card-body
+        h2.card-title
+          = blog.title
+        p.card-text style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 65ch;"
+          = blog.body
+        = link_to "Read more...", blog, class: "btn btn-primary"
+        / a.btn.btn-primary href="#"  Go to details
+      / .card-footer.text-muted
+        | 2 days ago
+    br
+  
